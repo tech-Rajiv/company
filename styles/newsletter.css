@@ -1,0 +1,43 @@
+/* Newsletter Styles */
+.newsletter {
+    background-color: var(--gray-100);
+    padding: 60px 0;
+}
+
+.newsletter .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-content h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.newsletter-content h2::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--accent-color);
+    right: -20px;
+    top: 0;
+}
+
+.newsletter-content p {
+    color: var(--text-light);
+    max-width: 90%;
+}
+
+.newsletter-form {
+    flex: 0 0 200px;
+    text-align: center;
+}

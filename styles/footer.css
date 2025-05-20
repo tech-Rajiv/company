@@ -1,0 +1,88 @@
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 80px 0 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.footer-brand {
+    flex: 0 0 30%;
+}
+
+.footer-brand .logo h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    color: var(--gray-300);
+    margin-bottom: 24px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--white);
+    color: var(--accent-color);
+}
+
+.footer-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent-color);
+    bottom: -8px;
+    left: 0;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column a {
+    color: var(--gray-300);
+    transition: var(--transition);
+}
+
+.footer-column a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}

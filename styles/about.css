@@ -1,0 +1,54 @@
+/* About Styles */
+.about {
+    background-color: var(--background-light);
+    position: relative;
+    padding: 100px 0;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-media {
+    position: relative;
+    height: 400px;
+    background-color: #E0E0E0; /* Placeholder for images */
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.about-content p {
+    margin-bottom: 24px;
+    color: var(--text-light);
+}
+
+.contact-info {
+    margin-top: 32px;
+    padding: 16px 24px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    display: inline-block;
+}
+
+.contact-info p {
+    margin: 0;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.about .dot-pattern {
+    bottom: 40px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+}
