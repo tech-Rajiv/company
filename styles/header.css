@@ -32,30 +32,19 @@
 .nav-menu a {
     color: var(--text-color);
     font-weight: 500;
-    position: relative;
     transition: var(--transition);
 }
 
 .nav-menu a:hover,
-.nav-menu a.active {
-    color: var(--accent-color);
+.nav-menu .active {
+    color: red;
+    text-underline-offset: 5px;
+    text-decoration: underline;
 }
 
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--accent-color);
-    transition: var(--transition);
-}
 
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
-    width: 100%;
-}
+
+
 
 .header-cta .btn {
     padding: 10px 20px;
@@ -76,5 +65,3 @@
     background-color: var(--primary-color);
     transition: var(--transition);
 }
-
-/* Mobile menu active state handled by JavaScript */
